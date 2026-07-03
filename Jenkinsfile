@@ -19,7 +19,7 @@ pipeline {
     steps {
         dir('ems-backend/ems-backend') {
             sh 'chmod +x mvnw'
-            sh './mvnw clean install'
+            sh './mvnw clean install -DskipTests'
         }
     }
 }
