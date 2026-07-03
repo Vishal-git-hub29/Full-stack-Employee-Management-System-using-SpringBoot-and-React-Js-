@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:8080/api/emp";
+const URL = "http://65.1.112.131:8080/api/emp";
 
 export const listEmployees = () =>  axios.get(URL);
 

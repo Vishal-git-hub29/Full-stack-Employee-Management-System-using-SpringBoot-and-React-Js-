@@ -16,13 +16,13 @@ pipeline {
         }
 
         stage('Build Backend') {
-            steps {
-                dir('ems-backend/ems-backend') {
-                    sh 'chmod +x mvnw'
-                    sh './mvnw clean install'
-                }
-            }
+    steps {
+        dir('ems-backend/ems-backend') {
+            sh 'chmod +x mvnw'
+            sh './mvnw clean install'
         }
+    }
+}
 
         stage('Build Frontend') {
             steps {
