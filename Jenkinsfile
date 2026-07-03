@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-                dir('ems-backend') {
+                dir('ems-backend/ems-backend') {
                     sh 'chmod +x mvnw'
                     sh './mvnw clean install'
                 }
